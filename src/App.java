@@ -8,7 +8,9 @@ public class App {
        
         System.out.println("Welcome to Dsa With Java");
 
-        BinarySearch b=new BinarySearch();
+        BubbleSort b=new BubbleSort();
+        PrintArray p=new PrintArray();
+        
        
         Scanner sc= new Scanner(System.in);
         
@@ -22,9 +24,13 @@ public class App {
        for(int i=0;i<size;i++){
             arr[i]=sc.nextInt();
         }
+        p.printArray(arr);
 
-      b.sortAscending(size, arr);
-      b.sorDecending(size, arr); 
-       
+       b.sortAscending(size, arr);
+       b.sorDecending(size, arr); 
+
+       InsertionSort in=new InsertionSort();
+       in.insertonSortAsc(size,arr);
+       in.insertonSortDesc(size, arr);
     }
 }

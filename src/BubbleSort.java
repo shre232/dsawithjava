@@ -1,18 +1,10 @@
-public class BinarySearch {
+public class BubbleSort {
   
-    BinarySearch(){
+    PrintArray pa=new PrintArray();
+    BubbleSort(){
         System.out.println("Buble Sort");
         System.out.println("Enter size of array"); 
     }
-
-
-
-    public static void printArray(int[] arr){
-        for(int i=0;i<arr.length;i++){
-          System.out.print(arr[i]+" ");
-           }
-          }
-    
           int temp=0;
           
           //Bubble sort in ascending order Start
@@ -31,7 +23,7 @@ public class BinarySearch {
           }
 
           System.out.println("\nBubble sort in Ascending Order: ");
-          printArray(arr);
+          pa.printArray(arr);
     
           
         }
@@ -50,7 +42,7 @@ public class BinarySearch {
         }
              System.out.println("\nBubble sort in decending Decending");
         
-              printArray(arr);
+              pa.printArray(arr);
     }
 
 }
