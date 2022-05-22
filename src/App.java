@@ -29,8 +29,8 @@ public class App {
        b.sortAscending(size, arr);
        b.sorDecending(size, arr); 
 
-       InsertionSort in=new InsertionSort();
-       in.insertonSortAsc(size,arr);
-       in.insertonSortDesc(size, arr);
+       SelectionSort in=new SelectionSort();
+       in.selectionSortAsc(size,arr);
+       in.selectionSortDesc(size, arr);
     }
 }

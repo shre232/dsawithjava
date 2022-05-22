@@ -1,11 +1,11 @@
-public class InsertionSort {
+public class SelectionSort {
 
-    InsertionSort(){
-        System.out.println("\nInsertion Sort");
+    SelectionSort(){
+        System.out.println("\nSelection Sort");
     }
     PrintArray b1=new PrintArray();
 
-    public void insertonSortAsc(int size,int [] arr){
+    public void selectionSortAsc(int size,int [] arr){
         for(int i=0;i<size-1;i++){
             int smallest=i;
             for(int j=i+1;j<size;j++){
@@ -21,12 +21,12 @@ public class InsertionSort {
             arr[i]=temp;
 
         }
-        System.out.println("\nInsertion sort in asc order");
+        System.out.println("\nSelection sort in asc order");
         b1.printArray(arr);
 
     }
 
-    public void insertonSortDesc(int size,int [] arr){
+    public void selectionSortDesc(int size,int [] arr){
         for(int i=0;i<size-1;i++){
             int largest=i;
             for(int j=i+1;j<size;j++){
@@ -42,7 +42,7 @@ public class InsertionSort {
             arr[i]=temp;
 
         }
-        System.out.println("\nInsertion sort in dec order");
+        System.out.println("\nSelection sort in dec order");
         b1.printArray(arr);
 
     }
