@@ -15,7 +15,7 @@ public class App {
         int size=sc.nextInt();
         int[] arr=new int[size];
 
-       // System.out.println("Enter Elemnts of array:");
+        System.out.println("Enter Elemnts of array:");
        
         //taking arry input
        
